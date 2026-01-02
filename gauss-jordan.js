@@ -3,6 +3,8 @@
  */
 
 var linear = (function(){
+const exports = {};
+
 /**
  * Used internally to solve systems
  * If you want to solve A.x = B,
@@ -151,4 +153,5 @@ exports.invert = function invert(A) {
 return exports;
 })();
 
-if (typeof module.exports === "object") module.exports = linear;
+export default linear;
+
